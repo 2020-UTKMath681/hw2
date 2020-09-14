@@ -38,6 +38,10 @@ Note that several time steps can be taken at the same time by taking powers of $
 \mathbf{n}_{t+2} = L(L\mathbf{n}_t) = L^2\mathbf{n}_t.
 \]
 
-One fact about Leslie matrices is that the eigenvalue with the largest magnitude, known as the dominant eigenvalue, can tell you whether or not the total population will grow or shrink in time. If the dominant eigenvalue has a magnitude greater than 1, the population as a whole will grow. Less than 1 and it will shrink. 
+One fact about Leslie matrices is that the eigenvalue with the largest magnitude, known as the dominant eigenvalue, can tell you whether or not the total population will grow or shrink in time. If the dominant eigenvalue has a magnitude greater than 1, the population as a whole will grow. Less than 1 and it will shrink.
+
+Note that in Python, you can get both the eigenvalues and eigenvectors of a matrix using numpy.linalg.eig. See the documentation on this function for more information. Also note that in Python, $L**2$ will result in each element of $L$ being squared, \textit{not} the matrix-matrix multiplication you want here!
+
+To complete your homework, follow the instructions in the starter code!
 
 \end{document}
